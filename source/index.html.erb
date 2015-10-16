@@ -2,9 +2,253 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <body>
+    <!-- Banner -->
+   <div class="banner text-center" style="background-image: url('https://unsplash.it/1000/400?image=0')">
+      <div class="banner-gradient"></div>
+      <div class="banner-content">
+        <h1>Start-up Tools</h1>
+        <p>Very cool stuff, useful and smart</p>
+        <a href="#" class="btn btn-primary">Get it</a>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div class="feature">
+                <h2><%= image_tag "chat.png" %>Discuss best tools </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi sed, odit tenetur? Necessitatibus ad nulla deleniti quis vel facere hic illum omnis expedita beatae aliquam quibusdam asperiores laborum, magni.
+                </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div class="feature">
+              <h2><%= image_tag "mobile.png" %>Always in sync</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi sed, odit tenetur? Necessitatibus ad nulla deleniti quis vel facere hic illum omnis expedita beatae aliquam quibusdam asperiores laborum, magni.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div class="feature">
+              <h2><%= image_tag "search.png" %>Powerful search</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi sed, odit tenetur? Necessitatibus ad nulla deleniti quis vel facere hic illum omnis expedita beatae aliquam quibusdam asperiores laborum, magni.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div class="feature">
+              <h2><%= image_tag "heart.png" %>Share the love</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi sed, odit tenetur? Necessitatibus ad nulla deleniti quis vel facere hic illum omnis expedita beatae aliquam quibusdam asperiores laborum, magni.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Cards -->
+     <h2 class="section-header text-center">Most Popular</h2>
+     <div class="cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="card">
+              <span class="card-bg"></span>
+              <span class="card-shadow"></span>
+              <span class="card-description">Popular</span>
+              <span class="card-text">
+                <h3>Trello</h3>
+                <p>Very cool stuff, useful and smart</p>
+              </span>
+              <span class="card-user">
+                <img class="avatar avatar-bordered img-circle" src="http://placehold.it/50x50"></img>
+              </span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4">
+           <div class="card">
+            <span class="card-bg"></span>
+            <span class="card-shadow"></span>
+            <span class="card-description">Popular</span>
+            <span class="card-text">
+              <h3>Intercom</h3>
+              <p>Very cool stuff, useful and smart</p>
+            </span>
+            <span class="card-user">
+              <img class="avatar avatar-bordered img-circle" src="http://placehold.it/50x50"></img>
+            </span>
+          </div>
+        </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+       <div class="card">
+        <span class="card-bg"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h3>Mixpanel</h3>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img class="avatar avatar-bordered img-circle" src="http://placehold.it/50x50"></img>
+        </span>
+      </div>
+      </div>
+     </div>
+   </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>Get news from us</h2>
+      <p>Leave us your mail and get stylus news</p>
+      <form action="/" class="form-inline">
+        <input type="email" class="form-control" placeholder="toto@mail.fr">
+        <input type="submit" value="apply" class="btn btn-primary">
+      </form>
+    </div>
+
+    <!-- Map -->
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "hue": "#0066ff"
+            },
+            {
+                "saturation": 74
+            },
+            {
+                "lightness": 100
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "weight": 0.6
+            },
+            {
+                "saturation": -85
+            },
+            {
+                "lightness": 61
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#5f94ff"
+            },
+            {
+                "lightness": 26
+            },
+            {
+                "gamma": 5.86
+            }
+        ]
+    }] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+
