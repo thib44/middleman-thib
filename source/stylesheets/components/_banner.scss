@@ -1,0 +1,38 @@
+.banner-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.banner {
+  position: relative;
+  text-align: center;
+  padding: 110px;
+  background-size: cover;
+  z-index: 0;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 50px;
+}
+.banner p {
+  color: white;
+  font-size: 20px;
+}
+
+.banner-gradient{
+  background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.banner-content{
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,32 @@
+.card {
+  background-image: url('https://unsplash.it/1000/400?image=1');
+  background-size: cover;
+  position: relative;
+  height: 175px;
+  margin-top: 20px;
+  h3{
+  color: white;
+  }
+  p{
+  color: white;
+  }
+}
+.card-description {
+  color: white;
+}
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.card-description{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
