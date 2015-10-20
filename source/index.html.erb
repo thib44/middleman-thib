@@ -40,6 +40,7 @@ title: Le Wagon Middleman boilerplate
               </p>
             </div>
           </div>
+
           <div class="col-xs-12 col-sm-3">
             <div class="feature">
               <h2><%= image_tag "heart.png" %>Share the love</h2>
@@ -53,10 +54,18 @@ title: Le Wagon Middleman boilerplate
 
      <!-- Cards -->
      <h2 class="section-header text-center">Most Popular</h2>
-     <div class="cards">
+     <div class="cards text-center">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4">
+          <% data.products.each do |product| %>
+            <div data-sr class="col-xs-12 col-sm-12 col-md-4">
+            <%= image_tag product.image %>
+            <h3><%= product.name %></h3>
+          </div>
+
+          <% end %>
+
+          <!-- <div class="col-xs-12 col-sm-12 col-md-4">
             <div class="card">
               <span class="card-bg"></span>
               <span class="card-shadow"></span>
@@ -97,7 +106,7 @@ title: Le Wagon Middleman boilerplate
           <img class="avatar avatar-bordered img-circle" src="http://placehold.it/50x50"></img>
         </span>
       </div>
-      </div>
+      </div> -->
      </div>
    </div>
 

@@ -1,4 +1,14 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Pizza
+  image: pizza.jpg
+- name: Oscar
+  image: oscardo.jpg
+- name: Jacques
+  image: pizza.jpg
+- name: Thibault
+  image: oscardo.jpg
+
+
+# <% data.products.each do |product| %>
+
+# <%= product.name %>
+# <% end %>
